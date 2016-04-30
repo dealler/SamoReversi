@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_without_logo" >
+
+    <ScrollView
+        android:id="@+id/scrollViewOne"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" >
+        
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:orientation="vertical" >
+        
+     		<ImageView
+       			android:src="@drawable/logosamoreversi"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:scaleType="center"
+        		android:contentDescription="@string/app_name" />
+     		<TextView
+        		android:id="@+id/TxtPlayer1Name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="match_parent"
+        		android:gravity="center_vertical"
+        		android:text="Reversi is a simple game played between two people on an 8 by 8 square board.The objective is to place pieces on the board so as to trap your opponent's pieces between your own and convert them to your own colour."
+       	 		android:textSize="14dp"
+       	 		android:textColor="@android:color/white"
+       	 		android:layout_marginTop="10dp"  />
+     		<TextView
+        		android:id="@+id/TxtPlayer1Name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="match_parent"
+        		android:gravity="center_vertical"
+        		android:text="Each piece is black on one side and red on the other,with one colour assigned to each player.The game begins with two pieces of each colour on the board and theplayers must take it in turns to then try and capture their opponent's pieces.The player can only play on squares that allow a capture to occur.In the position below black can play 1to 5 possible moves marked by the player colouron the ring.If they play on square marked by the black circle, this will trap 2 red pieces (see below)."
+       	 		android:textSize="14dp"
+       	 		android:textColor="@android:color/white"
+       	 		android:layout_marginTop="10dp" />
+     		<ImageView
+       			android:src="@drawable/gamerulesstep1"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:scaleType="center"
+        		android:contentDescription="@string/app_name"
+        		android:layout_marginTop="10dp"  />
+     		<TextView
+        		android:id="@+id/TxtPlayer1Name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="match_parent"
+        		android:gravity="center_vertical"
+        		android:text="After playing this move the new position will be as follows, with one added new black piece and 2 red pieces converted to black pieces."
+       	 		android:textSize="14dp"
+       	 		android:textColor="@android:color/white" 
+       	 		android:layout_marginTop="10dp" />
+     		<ImageView
+       			android:src="@drawable/gamerulesstep2"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:scaleType="center"
+        		android:contentDescription="@string/app_name" 
+        		android:layout_marginTop="10dp" />
+     		<TextView
+        		android:id="@+id/TxtPlayer1Name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="match_parent"
+        		android:gravity="center_vertical"
+        		android:text="In this new position red only has one capture (shown above) which will capture 2 black pieces."
+       	 		android:textSize="14dp"
+       	 		android:textColor="@android:color/white"
+       	 		android:layout_marginTop="10dp"  />
+     		<TextView
+        		android:id="@+id/TxtPlayer1Name"
+        		android:layout_width="wrap_content"
+        		android:layout_height="match_parent"
+        		android:gravity="center_vertical"
+        		android:text="If there in nowhever a player can place piece that will trap and flip any of the opponent's pieces, the turn counts as a pass. Once there are no more legal moves left, the player with the most number of pieces showning their colour is the winner."
+       	 		android:textSize="14dp"
+       	 		android:textColor="@android:color/white" 
+       	 		android:layout_marginTop="10dp" />
+     		
+     		<RelativeLayout
+       	 			android:id="@+id/linearLayout1"
+        			android:layout_width="match_parent"
+       				android:layout_height="wrap_content" >
+       				
+     			<Button
+           			android:id="@+id/butBack"
+           	 		android:layout_width="180dp"
+        			android:layout_height="wrap_content"
+        			android:layout_centerHorizontal="true"
+            		android:text="Back"
+            		android:layout_marginTop="10dp"  />
+     			</RelativeLayout>
+     		</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

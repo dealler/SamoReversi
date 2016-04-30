@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/blackwinbackground">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtBlackWin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linearBlackWin"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+     <LinearLayout
+        android:id="@+id/linearBlackWin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+
+
+        <Button
+            android:id="@+id/butPlayAgainBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="New Game" />
+
+        <Button
+            android:id="@+id/butReturnToMenuBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="Back to Menu" />
+    </LinearLayout>
+    	</RelativeLayout>
+   
+</LinearLayout>

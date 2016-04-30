@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/p2restartgame" android:title="Restart Game" android:alphabeticShortcut="g"></item>
+    <item android:id="@+id/p2vsplayer" android:title="Play as 2 Players" android:alphabeticShortcut="pp"></item>
+    <item android:id="@+id/p2gamerules" android:alphabeticShortcut="r" android:title="Game Rules"></item>
+    <item android:id="@+id/p2gameinfo" android:alphabeticShortcut="i" android:title="Game Info"></item>
+
+</menu>

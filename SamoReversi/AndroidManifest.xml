@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="samo.reversi"
+    android:versionCode="1" android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:icon="@drawable/ninja_bghead"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".SamoReversiActivity" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SamoMenu" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="samo.reversi.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name=".SamoHistoryActivity" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="samo.reversi.HISTORY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SamoGameBoard" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="samo.reversi.PLAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SamoOptions" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="samo.reversi.OPTIONS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SamoWinner" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="samo.reversi.WINNER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".SamoGameRules" 
+             android:screenOrientation="portrait">
+            <intent-filter >
+                <action android:name="samo.reversi.RULES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>

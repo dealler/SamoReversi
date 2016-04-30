@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmenu"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+    	android:layout_alignParentBottom="true"
+        android:layout_marginTop="340dp" >
+
+        <ImageView
+            android:id="@+id/imgninjaWhite"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|left"
+            android:src="@drawable/ninja_bg2" />
+
+        <ImageView
+            android:id="@+id/imgGamePlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@anim/anim_gameplay" />
+
+        <ImageView
+            android:id="@+id/imgninjaBlack"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/ninja_bg1" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/butPlay"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="1 Player" />
+
+    <Button
+        android:id="@+id/but2Players"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butPlay"
+        android:layout_centerHorizontal="true"
+        android:text="2 Players" />
+
+    <Button
+        android:id="@+id/butOptions"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but2Players"
+        android:layout_centerHorizontal="true"
+        android:text="Options" />
+
+    <Button
+        android:id="@+id/butHistory"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butOptions"
+        android:layout_centerHorizontal="true"
+        android:text="History" />
+
+    <Button
+        android:id="@+id/butHowToPlay"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/butHistory"
+        android:layout_centerHorizontal="true"
+        android:text="How To Play" />
+
+</RelativeLayout>

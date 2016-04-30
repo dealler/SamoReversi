@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/tiebackground">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+ 		<LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearTieGame" >
+            
+       		 <TextView
+                android:id="@+id/txtTiewhite"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.30"
+                android:text="White"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:id="@+id/txtTieblack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:layout_weight="0.30"
+                android:text="Black"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+     <LinearLayout
+        android:id="@+id/linearTieGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+
+
+
+        <Button
+            android:id="@+id/butPlayAgainTie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="New Game" />
+
+        <Button
+            android:id="@+id/butReturnToMenuTie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.44"
+            android:text="Back to Menu" />
+    </LinearLayout>
+
+	</RelativeLayout>
+
+
+   
+</LinearLayout>
